@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabel Produk dan Nilai</title>
+    <style>
+      body {
+        background-image: url("bg.png");
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+      }
+      table {
+        border-collapse: collapse;
+        margin: 20px;
+        width: 60%;
+        text-align: left;
+        background-color: white;
+      }
+      td,
+      th {
+        border: 1px solid black;
+        padding: 8px;
+      }
+      .produk-table {
+        margin-bottom: 40px;
+      }
+      .produk-header {
+        background-color: yellow;
+        font-weight: bold;
+        text-align: center;
+      }
+      .nilai-header {
+        background-color: blue;
+        color: white;
+        text-align: center;
+      }
+      .produk-image {
+        text-align: center;
+        width: 150px;
+        height: 150px;
+      }
+      .produk-image img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="produk-table">
+      <tr class="produk-header">
+        <td colspan="4">Produk Unggulan</td>
+      </tr>
+      <tr>
+        <td rowspan="3" class="produk-image">
+          <img src="tb.png" alt="Produk" />
+        </td>
+        <td>Nama</td>
+        <td>Benih Kode</td>
+      </tr>
+      <tr>
+        <td>Harga</td>
+        <td>Rp 192.000</td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <b>fitur</b>
+          <ul>
+            <li>Dilengkapi Dokumentasi</li>
+            <li>Ukuran: 31MB</li>
+            <li>Masa Tanam: 6 Bulan</li>
+            <li>Lisensi: MIT</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+
+    <table>
+      <tr class="nilai-header">
+        <th>Nama</th>
+        <th>Kimia</th>
+        <th>Fisika</th>
+        <th>Biologi</th>
+      </tr>
+      <tr>
+        <td>Robby</td>
+        <td>76</td>
+        <td>80</td>
+        <td>81</td>
+      </tr>
+      <tr>
+        <td>Rendi</td>
+        <td>84</td>
+        <td>70</td>
+        <td>75</td>
+      </tr>
+      <tr>
+        <td>Alfian</td>
+        <td>96</td>
+        <td>70</td>
+        <td>71</td>
+      </tr>
+    </table>
+  </body>
+</html>
